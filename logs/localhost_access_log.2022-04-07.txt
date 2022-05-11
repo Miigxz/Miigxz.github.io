@@ -1,0 +1,16 @@
+127.0.0.1 - - [07/Apr/2022:18:23:00 +0800] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [07/Apr/2022:18:23:01 +0800] "GET /Cuevas-BakeShop/ HTTP/1.1" 404 772
+127.0.0.1 - - [07/Apr/2022:18:23:01 +0800] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [07/Apr/2022:18:23:07 +0800] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [07/Apr/2022:18:23:16 +0800] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [07/Apr/2022:18:23:17 +0800] "GET /Cuevas-BakeShop/ HTTP/1.1" 200 3971
+127.0.0.1 - - [07/Apr/2022:18:23:18 +0800] "GET /Cuevas-BakeShop/style.css HTTP/1.1" 200 4935
+127.0.0.1 - - [07/Apr/2022:18:23:18 +0800] "GET /Cuevas-BakeShop/fixed.css HTTP/1.1" 200 1415
+127.0.0.1 - - [07/Apr/2022:18:23:18 +0800] "GET /Cuevas-BakeShop/images/logoCuevas.png HTTP/1.1" 200 8192
+127.0.0.1 - - [07/Apr/2022:18:23:19 +0800] "GET /Cuevas-BakeShop/login.jsp HTTP/1.1" 200 1989
+127.0.0.1 - - [07/Apr/2022:18:23:23 +0800] "POST /Cuevas-BakeShop/Login HTTP/1.1" 302 -
+127.0.0.1 - - [07/Apr/2022:18:23:23 +0800] "GET /Cuevas-BakeShop/index.jsp HTTP/1.1" 200 4066
+127.0.0.1 - - [07/Apr/2022:18:23:28 +0800] "GET /Cuevas-BakeShop/ProductList.jsp HTTP/1.1" 200 4964
+127.0.0.1 - - [07/Apr/2022:18:23:28 +0800] "GET /Cuevas-BakeShop/style.css HTTP/1.1" 200 4935
+127.0.0.1 - - [07/Apr/2022:18:23:31 +0800] "POST /Cuevas-BakeShop/UploadImage HTTP/1.1" 302 -
+127.0.0.1 - - [07/Apr/2022:18:23:31 +0800] "GET /Cuevas-BakeShop/ProductList.jsp HTTP/1.1" 200 4964

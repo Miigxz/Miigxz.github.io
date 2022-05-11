@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:400,700');
+
+/*------link buttons-------*/
+a:link{
+	color:rgba(15, 15, 10, 0.89);
+	text-decoration:none;
+}
+
+a:visited{
+	color:rgba(15, 15, 10, 0.89);
+	text-decoration:none;
+}
+
+a:hover{
+	color:white;
+	text-decoration:underline;
+}
+
+a:active{
+	color:rgba(15, 15, 10, 0.89);
+	text-decoration:none;
+}
+
+/*------link buttons-------*/
+
+body{
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	color: #1f1f1f;
+	background: -webkit-linear-gradient(rgba(253, 205, 61, 0.30), rgba(253, 205, 61, 0.30)), url("images/background1.jpg")
+}
+
+.indexbody{
+	min-height:700px;
+}
+
+/*--- Navigation --*/
+
+.navbar {
+	text-transform: uppercase;
+	font-weight: 10;
+	font-size: .8rem;
+	letter-spacing: .1rem;
+	background: rgba(253, 205, 61, 0.89)!important;
+	overflow: auto;
+	width: 100%;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: black;
+  border:none;
+  border-radius:.55rem;
+  text-decoration: none;
+  font-size: 17px;
+  width: 16.6%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color:rgb(254,218,111);
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: rgba(15, 15, 10, 0.89);
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 700px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+.centerLogo {
+  display: block;
+  width: 15%;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:20px;
+}
+
+@media screen and (max-width:700px){
+	.centerLogo {
+  	display:block;
+  	width:35%;
+  	height:auto;
+  	margin-left:auto;
+  	margin-right:auto;
+  	margin-bottom:20px;
+  }
+}
+
+.zoom {
+  padding: 0px;
+  background-color: rgba(15, 15, 10, 0.89);
+  transition: transform .5s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.searchBar input[type=text] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.searchBar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: rgba(253, 205, 61, 0.89);
+  color: white;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.searchBar button:hover {
+  background: rgba(15, 15, 10, 0.89);
+}
+
+/* Clear floats */
+form.searchBar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*------Start of View Products------*/
+
+#prod{
+	background-color:rgba(254,220,119, .89);
+	margin: 5px;
+	width: 288px;
+	height: auto;
+	padding: 20px;
+}	
+/*------End of View Products------*/
+
+#searchp {
+	margin: auto;	
+}
+
+.col-lg-4 {
+	width: 29%;
+}
+
+.col-sm-9 {
+	width: 60%;
+}
+/*------Start of Login Page------*/
+
+.login {
+  	background: rgba(254,220,119, .89);
+  	width: 375px;
+  	height: 350px;
+ 	margin: 5% auto;
+ 	border:none;
+ 	border-radius:.55rem;
+}
+
+.loginInput {
+	
+	margin:0;
+	padding-top:5%;
+	
+	
+}
+
+.loginInput label{
+	
+	margin-top:2%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.loginInput input{
+	margin-bottom:10px;
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+	border: none;
+	border-radius: .55rem;
+	text-indent:10px;
+	
+}
+
+.loginInput input, textarea{
+	background-color:rgba(255,255,255,1);
+}
+
+.loginInput ::placeholder{
+	color:rgba(253,205,61,1);
+}
+
+.loginRemember{
+	
+	margin-top:2%;
+	margin-left:7%;
+	margin-right:5%;
+	width:auto;
+	height:auto;
+	text-align:left;
+}
+
+
+.loginBtn{
+	margin: 5% 50px;
+	padding:0 25px;
+	
+}
+
+.loginBtn button{
+	
+	width:100%;
+	border:none;
+	border-radius:.55rem;
+}
+
+.loginReg{
+	
+	margin:0 50px;
+	text-align:center;
+}
+
+@media screen and (max-width:700px){
+	.login {
+  	background: rgba(254,220,119, .89);
+  	width: 375px;
+  	height: 350px;
+ 	margin: 5% auto;
+ 	border:none;
+ 	border-radius:.55rem;
+	}
+	
+}
+
+/*------End of Login page------*/
+
+/*------Start of Register page------*/
+.modal-bg{
+	background-color:rgba(0,0,0,0.5);	
+	position:fixed;
+	width:100%;
+	height:100vh;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	visibility:visible;
+	opacity:1;
+	
+	
+	
+}
+
+.modal-bg-active{
+	visibility:hidden;
+	opacity:0;
+	transition: visibility 0s, opacity 0.5s;
+}
+
+.modalPriv{
+	border:none;
+	border-radius: .55rem;
+	background:white;
+	width:300px;
+	height:auto;
+	font-size:10px;
+	padding:10px;
+	text-align:center;
+	
+}
+
+
+.modalPriv h2{
+	text-align:center;
+}
+
+.modalPriv p{
+	text-align:justify;
+}
+
+.modalPriv button{
+	cursor:pointer;
+	margin-top:10px;
+	
+}
+
+.register {
+  	background: rgba(254,220,119, .89);
+  	width: 375px;
+  	height: 700px;
+ 	margin: 5% auto;
+ 	border:none;
+ 	border-radius:.55rem;
+}
+
+.registerInput {
+	
+	margin:0;
+	padding-top:5%;
+	
+	
+}
+
+.registerInput label{
+	margin-top:2%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.registerInput input{
+	margin-bottom:10px;
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+	border: none;
+	border-radius: .55rem;
+	text-indent:10px;
+	
+}
+
+.registerInput input, textarea{
+	background-color:rgba(255,255,255,1);
+}
+
+.registerInput ::placeholder{
+	color:rgba(253,205,61,1);
+}
+
+.registerBtn{
+	margin: 5% 50px;
+	padding:0 25px;
+	
+}
+
+.registerBtn button{
+	width:100%;
+	border:none;
+	border-radius:.55rem;
+}
+
+
+@media screen and (max-width:700px){
+	.register {
+  	background: rgba(254,220,119, .89);
+  	width: 375px;
+  	height: 700px;
+  	margin-top:10%;
+  	padding:5%;
+	}
+	
+}
+
+/*------End of Register page------*/
+
+.table tbody td {
+	vertical-align: middle;
+}
+
+.btn-increment, .btn-decrement{
+	box-shadow: none;
+	font-size: 25px;
+}
+
+/*------Start of Location page------*/
+.location-description{
+	color: black !important;
+}
+
+.gallery img{
+    width:  100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: .25rem;
+}
+
+.gallery{
+	margin: 5px;
+	border: 1px solid rgba(0,0,0, .125);
+	float: left;
+	width: 15rem;
+	background-color: rgba(254,220,119, .89) ;
+	border-radius: .25rem;
+	padding-top: 20px;
+}
+
+.col-xs-12 {
+    margin-top: 20px;
+}
+
+.location-description{
+	padding: 15px;
+	text-align: center;
+}
+/*------End of Location page------*/
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+/*------Start of About Page------*/
+.background {
+	background: rgba(254,220,119, .89);
+	padding: 20px;
+	border-radius: .55rem;
+	margin: auto;
+	margin-top: 40px;
+	width: 100%;
+	text-align:justify;
+}
+/*------End of About Page------*/
+
+/*------Start of Confirm Checkout------*/
+.checkout{
+	background: rgba(254,220,119, .89);
+	padding: 20px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom:40px;
+	width: 375px;
+  	height: 100%;
+  	border-radius: .55rem;
+}
+
+.checkout h2{
+	text-align:center;
+}
+
+.checkInput {
+	
+	margin:0;
+	padding-top:5%;
+	
+	
+}
+
+.checkInput label{
+	
+	margin-top:2%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.checkInput input{
+	margin-bottom:10px;
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+	border: none;
+	border-radius: .55rem;
+	text-indent:10px;
+	
+}
+
+.checkInput input, textarea{
+	background-color:rgba(255,255,255,1);
+}
+
+.checkInput ::placeholder{
+	color:rgba(253,205,61,1);
+}
+
+.checkBtn{
+	margin: 5% 50px;
+	padding:0 25px;
+	
+}
+
+.checkBtn button{
+	
+	width:100%;
+	border:none;
+	border-radius:.55rem;
+}
+
+.checkReg{
+	
+	margin:0 50px;
+	text-align:center;
+}
+
+@media screen and (max-width:700px){
+	.checkout {
+  	background: rgba(254,220,119, .89);
+  	width: 375px;
+  	height: 350px;
+ 	margin: 5% auto;
+ 	border:none;
+ 	border-radius:.55rem;
+	}
+	
+}
+
+/*------Start of Confirm Checkout------*/
+
+.background h1 {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.main {
+		border: 2px solid;
+		width: 300px;
+        height: 200px;
+        margin: auto;
+        margin-top: 20px;
+}
+
+.main input {
+	margin: auto 20px;
+	margin-top: 20px;
+}
+
+
+/*------Start of Footer------*/
+#Help{
+	margin-top:50px;
+}
+
+.footer h3{
+	font-size:20px
+}
+.footer{
+	width:100%;
+	height:100%;	
+	background-color: rgb(65,25,11);
+}
+
+.footer-content{
+	display:flex;
+	width:100%;
+	height:100%;
+	vertical-align:top;
+}
+
+.footerLeft{
+	display:inline-block;
+	width:50%;
+	height:auto;
+	margin:10px;
+	
+}
+
+.footerLogo{
+	display:inline-block;
+	display:block;
+	width:75%;
+	height:75%;
+	margin:auto;
+	
+}
+
+.footerLogo img{
+	margin:0;
+	width:100%;
+	height:100%;
+	object-fit:contain;
+}
+
+.footerText{
+	display:block;
+	color:	rgb(236,160,33);
+	width:fit-content;
+	height:auto;
+}
+
+.footerSocials{
+	display:inline-block;
+	width:fit-content;
+	height:auto;
+}
+
+.fa{
+	padding:7px;
+	font-size:30px;
+	width:30px;
+	height:30px;
+	text-align:center;
+	text-decoration:none;
+	border-radius:50%;
+}
+
+.fa-facebook{
+	background:rgb(236,160,33);
+}
+
+.fa-twitter{
+	background:rgb(236,160,33);
+}
+
+.fa-instagram{
+	background:rgb(236,160,33);
+}
+
+.footerRight{
+	display:inline-block;
+	width:50%;
+	height:auto;
+	outline:white;
+	margin:10px;
+	
+}
+
+
+/*------End of Footer------*/
+
+/*============ BOOTSTRAP BREAK POINTS:
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+=============*/
